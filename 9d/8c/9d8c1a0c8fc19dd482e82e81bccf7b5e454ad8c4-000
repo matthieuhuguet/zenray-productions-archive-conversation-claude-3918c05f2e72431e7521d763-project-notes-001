@@ -159,3 +159,38 @@
 - Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/6ab0a8c4-7fa2-46a1-b1f4-282a74f8f6f2.jsonl. (11 October 2026, 13:31:46 +0200)
 
 > je voulais plutôt le mcp officiel de claude que de blender en fait ... compare les deux versions : MCP officiel de Blender Lab (11 October 2026, 13:31:46 +0200)
+
+## 11 October 2026, 13:39:07 +0200 : Iteration
+
+<!-- feedback-event:e2d0c0276d6bde13b9d52d8a59c3db4dd6d32f8db2b01d777ccf0d428b2cf3c2 (11 October 2026, 13:39:07 +0200) -->
+- Project: conversation-claude-3918c05f2e72431e7521d763; kind: iteration. (11 October 2026, 13:39:07 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/6ab0a8c4-7fa2-46a1-b1f4-282a74f8f6f2.jsonl. (11 October 2026, 13:39:07 +0200)
+
+> Je n'ai rien installé ni modifié : les deux versions sont comparées, pas remplacées. (11 October 2026, 13:39:07 +0200)
+>
+> Le connecteur Blender de Claude est annoncé comme « créé par les développeurs de Blender » et « officiellement disponible pour Claude ». Anthropic a fait un don ponctuel à Blender. Le tutoriel précise qu'il repose sur le serveur MCP de Blender, donc très probablement le même code. C'est une inférence : je n'ai pas pu ouvrir la fiche du connecteur (erreur 404), donc je ne connais pas la version qu'il embarque. (11 October 2026, 13:39:07 +0200)
+>
+> | Critère | Connecteur Claude (Claude Desktop) | Blender Lab (installé pour Claude Code) | (11 October 2026, 13:39:07 +0200)
+> |---|---|---| (11 October 2026, 13:39:07 +0200)
+> | Où ça tourne | Claude Desktop, pas claude.ai | Tout client MCP, ici Claude Code | (11 October 2026, 13:39:07 +0200)
+> | Installation | Customize > Connectors > Blender > Add, puis glisser le lien de la page Blender dans Blender deux fois | `uv tool install` depuis le tag v1.0.3, add-on depuis le fichier, puis `claude mcp add` | (11 October 2026, 13:39:07 +0200)
+> | Blender requis | 4.2 ou plus selon le tutoriel, mais l'add-on exige 5.1 | 5.1 ou plus (manifest de l'add-on) | (11 October 2026, 13:39:07 +0200)
+> | Plan Claude | Tout plan, Free compris | Compte Claude Code | (11 October 2026, 13:39:07 +0200)
+> | Mises à jour | Notifications de l'add-on via le dépôt Lab | Manuelles, version v1.0.3 épinglée | (11 October 2026, 13:39:07 +0200)
+> | Accès en ligne Blender | Non mentionné par le tutoriel, mais requis par l'add-on | Idem, à activer à la main | (11 October 2026, 13:39:07 +0200)
+> | Sécurité | Même avertissement officiel : code IA exécuté sans garde-fou, VM conseillée | Idem | (11 October 2026, 13:39:07 +0200)
+> | État chez toi | Aucun connecteur Blender sur ce compte | Add-on activé, serveur connecté dans Claude Code | (11 October 2026, 13:39:07 +0200)
+>
+> - Le connecteur de la boutique est le chemin le plus simple, et il marche sur le plan gratuit. (11 October 2026, 13:39:07 +0200)
+> - Ton installation Claude Code reste fonctionnelle. Les deux peuvent coexister, mais je ne l'ai pas testé. (11 October 2026, 13:39:07 +0200)
+> - Si tu suis le tutoriel, l'add-on déjà installé depuis le fichier sera probablement remplacé par celui du dépôt Lab. Je ne l'ai pas vérifié. (11 October 2026, 13:39:07 +0200)
+> - Le point qui bloque aujourd'hui reste l'accès en ligne de Blender, à activer dans ses préférences. (11 October 2026, 13:39:07 +0200)
+>
+> Tu veux que je garde les deux, ou que je retire l'entrée Claude Code pour ne garder que le connecteur Claude Desktop ? Je ne retire rien sans ton accord. (11 October 2026, 13:39:07 +0200)
+>
+> Sources (11 October 2026, 13:39:07 +0200)
+> - [Annonce Anthropic, Claude for Creative Work](https://www.anthropic.com/news/claude-for-creative-work) (11 October 2026, 13:39:07 +0200)
+> - [Tutoriel Claude Academy, connecteur Blender](https://academy.claude.com/tutorials/using-the-blender-connector-in-claude) (11 October 2026, 13:39:07 +0200)
+> - [Page officielle Blender Lab MCP](https://www.blender.org/lab/mcp-server/) (11 October 2026, 13:39:07 +0200)
+> - [Dépôt officiel lab/blender_mcp](https://projects.blender.org/lab/blender_mcp) (11 October 2026, 13:39:07 +0200)
+> - [Liste des outils MCP](https://projects.blender.org/lab/blender_mcp/raw/branch/main/readme_tools.rst) (11 October 2026, 13:39:07 +0200)
