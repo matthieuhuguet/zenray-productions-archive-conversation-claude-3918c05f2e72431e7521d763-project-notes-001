@@ -1,0 +1,153 @@
+# conversation-claude-3918c05f2e72431e7521d763 : project feedback, append only (11 October 2026, 10:50:31 +0200)
+
+## 11 October 2026, 10:50:31 +0200 : Log
+
+<!-- feedback-event:b5bb5722fec119a531ad03b4b862cbe259573b536c16d23331086c98ad9e5295 (11 October 2026, 10:50:31 +0200) -->
+- Project: conversation-claude-3918c05f2e72431e7521d763; kind: log. (11 October 2026, 10:50:31 +0200)
+
+> Project initialized: Installation Blender 5.2.2 et MCP Blender officiel. Workshop: /Users/zenray/.claude/tmp/tmp-conversation-claude-3918c05f2e72431e7521d763. (11 October 2026, 10:50:31 +0200)
+
+## 11 October 2026, 10:38:03 +0200 : Prompt
+
+<!-- feedback-event:1b2f40d9ed617447be9387c218d64d723b312640b31fae29aa29cad987b1ae64 (11 October 2026, 10:38:03 +0200) -->
+- Project: conversation-claude-3918c05f2e72431e7521d763; kind: prompt. (11 October 2026, 10:38:03 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/6ab0a8c4-7fa2-46a1-b1f4-282a74f8f6f2.jsonl. (11 October 2026, 10:38:03 +0200)
+
+> installe la derniere version de blender mais pas la beta la version normal. app macos (11 October 2026, 10:38:03 +0200)
+
+## 11 October 2026, 10:50:32 +0200 : Prompt
+
+<!-- feedback-event:2b08f9f173ec08c20a05b88b1d11dbb263be6240f9f67a585e46f69df1f719c8 (11 October 2026, 10:50:32 +0200) -->
+- Project: conversation-claude-3918c05f2e72431e7521d763; kind: prompt. (11 October 2026, 10:50:32 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/6ab0a8c4-7fa2-46a1-b1f4-282a74f8f6f2.jsonl. (11 October 2026, 10:50:32 +0200)
+
+> Base directory for this skill: /Users/zenray/.claude/skills/progress (11 October 2026, 10:50:32 +0200)
+>
+> # Progress global (11 October 2026, 10:50:32 +0200)
+>
+> Ce skill gère une seule chronologie pour toutes les sessions : (11 October 2026, 10:50:32 +0200)
+>
+> `/Users/zenray/.claude/PROGRESS.md` (11 October 2026, 10:50:32 +0200)
+>
+> Il ne remplace pas les bases de contexte de Memory. Les rôles restent séparés : (11 October 2026, 10:50:32 +0200)
+>
+> - `~/.claude/PROGRESS.md` raconte **quand et quoi** à travers tous les projets ; (11 October 2026, 10:50:32 +0200)
+> - `Memory/<domaine>/<Nom>1.md` conserve **ce que le projet sait durablement** ; (11 October 2026, 10:50:32 +0200)
+> - un skill routeur indique quelle source `*1.md` lire ou compléter ; (11 October 2026, 10:50:32 +0200)
+> - `CLAUDE.md` porte les lois ; le code et ses commentaires portent l’implémentation. (11 October 2026, 10:50:32 +0200)
+>
+> Une même session peut donc produire deux écritures sans duplication : le détail durable s’ajoute au bon (11 October 2026, 10:50:32 +0200)
+> `*1.md`, puis le journal global en garde une ligne courte et le chemin de cette source. (11 October 2026, 10:50:32 +0200)
+>
+> ## Écrire (11 October 2026, 10:50:32 +0200)
+>
+> Passer toujours par le script, car Claude Code et Codex peuvent écrire au même instant : (11 October 2026, 10:50:32 +0200)
+>
+> ```zsh (11 October 2026, 10:50:32 +0200)
+> node /Users/zenray/.claude/skills/progress/scripts/progress.mjs append \ (11 October 2026, 10:50:32 +0200)
+>   --project "Nom du projet" \ (11 October 2026, 10:50:32 +0200)
+>   --fait "Résultat factuel" \ (11 October 2026, 10:50:32 +0200)
+>   --verifie "Commande ou preuve" \ (11 October 2026, 10:50:32 +0200)
+>   --source-durable "/chemin/vers/Projet1.md" \ (11 October 2026, 10:50:32 +0200)
+>   --prochain "Action suivante" (11 October 2026, 10:50:32 +0200)
+> ``` (11 October 2026, 10:50:32 +0200)
+>
+> Champs facultatifs : `--mesure`, `--decision`, `--echoue`, `--ecarte`, `--apprentissage`, `--blocage`. (11 October 2026, 10:50:32 +0200)
+> `--project` et `--fait` sont obligatoires. Ne jamais construire l’entrée à la main. (11 October 2026, 10:50:32 +0200)
+>
+> Le script : (11 October 2026, 10:50:32 +0200)
+>
+> - prend un verrou interprocessus, puis écrit toute l’entrée en un seul append ; (11 October 2026, 10:50:32 +0200)
+> - identifie Codex depuis le transcript de la session et relève le modèle et l’effort réellement utilisés ; (11 October 2026, 10:50:32 +0200)
+> - identifie Claude Code depuis son environnement, mais écrit `non exposé par l’hôte` si le modèle courant (11 October 2026, 10:50:32 +0200)
+>   n’est pas démontrable ; (11 October 2026, 10:50:32 +0200)
+> - masque toute valeur qui ressemble à un secret ; (11 October 2026, 10:50:32 +0200)
+> - refuse un agent inconnu au lieu d’en inventer un. (11 October 2026, 10:50:32 +0200)
+>
+> ## 9 October 2026, 12:45 CEST : Transcripts Codex longs (11 October 2026, 10:50:32 +0200)
+>
+> - Le détecteur lit les 8 Mio finaux du transcript pour retrouver le modèle courant sans charger un fichier entier qui peut dépasser la limite de chaîne de Node. (9 October 2026) (11 October 2026, 10:50:32 +0200)
+> - Il retire la première ligne si la lecture commence au milieu d’un événement JSONL. (9 October 2026) (11 October 2026, 10:50:32 +0200)
+>
+> Pour Claude Code, passer `--model` et `--effort` seulement si les métadonnées de la session les exposent (11 October 2026, 10:50:32 +0200)
+> réellement. Le nom que le modèle donne de lui-même n’est pas une preuve ; l’hôte ou le transcript le sont. (11 October 2026, 10:50:32 +0200)
+>
+> ## Relire (11 October 2026, 10:50:32 +0200)
+>
+> Au début d’une session, lire seulement les dernières entrées utiles, jamais le fichier entier : (11 October 2026, 10:50:32 +0200)
+>
+> ```zsh (11 October 2026, 10:50:32 +0200)
+> node /Users/zenray/.claude/skills/progress/scripts/progress.mjs tail --count 3 (11 October 2026, 10:50:32 +0200)
+> node /Users/zenray/.claude/skills/progress/scripts/progress.mjs tail --project "ZenRayShards" --count 3 (11 October 2026, 10:50:32 +0200)
+> ``` (11 October 2026, 10:50:32 +0200)
+>
+> Donner ensuite en trois lignes maximum les trois derniers faits pertinents et la dernière étape `Prochain`. (11 October 2026, 10:50:32 +0200)
+>
+> ## Router vers Memory (11 October 2026, 10:50:32 +0200)
+>
+> Quand le fait change la connaissance durable d’un domaine, utiliser son routeur avant l’entrée globale : (11 October 2026, 10:50:32 +0200)
+>
+> - `matthieu-context` vers `Identity/Matthieu1.md` ; (11 October 2026, 10:50:32 +0200)
+> - `japanese-context` vers `Japanese/Japanese1.md` ; (11 October 2026, 10:50:32 +0200)
+> - `zenrayshards-context` vers `ZenRayShards/ZenRayShards1.md` ; (11 October 2026, 10:50:32 +0200)
+> - les autres domaines suivent le même contrat : un `*1.md` unique et un skill routeur court. (11 October 2026, 10:50:32 +0200)
+>
+> Ne jamais transformer le journal global en base de projet. L’entrée cite la source durable, elle ne la copie pas. (11 October 2026, 10:50:32 +0200)
+>
+> ## Journaux historiques (11 October 2026, 10:50:32 +0200)
+>
+> La migration des sept anciens `PROGRESS.md` est close le 2026-08-22 : 1 540 entrées sur 1 540 ont été reconnues (11 October 2026, 10:50:32 +0200)
+> dans le global, puis les sources ont été supprimées avec la validation explicite de Matthieu. Ne jamais les (11 October 2026, 10:50:32 +0200)
+> recréer. Si un autre journal legacy apparaît plus tard, l’importer de manière idempotente avant de le retirer : (11 October 2026, 10:50:32 +0200)
+>
+> ```zsh (11 October 2026, 10:50:32 +0200)
+> node /Users/zenray/.claude/skills/progress/scripts/progress.mjs import-legacy \ (11 October 2026, 10:50:32 +0200)
+>   --source /chemin/ancien/PROGRESS.md (11 October 2026, 10:50:32 +0200)
+> ``` (11 October 2026, 10:50:32 +0200)
+>
+> Le script ajoute un identifiant par entrée, ignore les doublons et masque les secrets dans la copie globale. (11 October 2026, 10:50:32 +0200)
+> Conserver l’original jusqu’à ce que l’import rende zéro ajout à la seconde passe et qu’une suppression soit (11 October 2026, 10:50:32 +0200)
+> explicitement autorisée. (11 October 2026, 10:50:32 +0200)
+>
+> ## Déclencheurs (11 October 2026, 10:50:32 +0200)
+>
+> Écrire automatiquement après une tâche finie, une décision, une mesure, une piste échouée ou écartée, un (11 October 2026, 10:50:32 +0200)
+> blocage rencontré ou levé, une modification structurelle, un apprentissage notable, une pause, une compaction, (11 October 2026, 10:50:32 +0200)
+> ou une demande explicite de sauvegarde. Une action triviale sans information durable ne mérite pas une entrée. (11 October 2026, 10:50:32 +0200)
+>
+> ## Horodatage : heure locale et décalage explicite (2026-09-23) (11 October 2026, 10:50:32 +0200)
+>
+> Chaque entrée commence par `YYYY-MM-DD HH:MM +HH:MM`, l'heure locale du Mac suivie de son décalage (11 October 2026, 10:50:32 +0200)
+> UTC. Du 2026-08-20 au 2026-09-23, le script écrivait l'heure de Tokyo SANS décalage : ces entrées se (11 October 2026, 10:50:32 +0200)
+> lisent donc en `Asia/Tokyo`, et les entrées importées d'anciens journaux (`legacy-id`) gardent l'heure (11 October 2026, 10:50:32 +0200)
+> murale du lieu où elles ont été écrites (Paris avant le 2026-06-12, Tokyo ensuite). La vue Progress de (11 October 2026, 10:50:32 +0200)
+> ZenRayProgress applique exactement cette règle. (11 October 2026, 10:50:32 +0200)
+
+## 11 October 2026, 10:51:16 +0200 : Iteration
+
+<!-- feedback-event:543be638be7da03009a3f5f6340b416d54e9e4ec4a58edc593d66772153c39ea (11 October 2026, 10:51:16 +0200) -->
+- Project: conversation-claude-3918c05f2e72431e7521d763; kind: iteration. (11 October 2026, 10:51:16 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/6ab0a8c4-7fa2-46a1-b1f4-282a74f8f6f2.jsonl. (11 October 2026, 10:51:16 +0200)
+
+> Blender 5.2.2 LTS et le MCP officiel de Blender Lab sont installés. Il reste une action de ta part. (11 October 2026, 10:51:16 +0200)
+>
+> **Fait** (11 October 2026, 10:51:16 +0200)
+> - Blender 5.2.2 LTS, version stable : [/Applications/Blender.app](/Applications/Blender.app) (11 October 2026, 10:51:16 +0200)
+> - MCP officiel Blender Lab v1.0.3 : add-on activé dans Blender, serveur `blender-mcp` enregistré pour Claude Code dans [/Users/zenray/.claude.json](/Users/zenray/.claude.json) (11 October 2026, 10:51:16 +0200)
+>
+> **À faire par toi** (11 October 2026, 10:51:16 +0200)
+> 1. Autoriser l'accès en ligne dans les préférences système de Blender. Sans lui, l'add-on ne démarre pas son serveur. Je ne l'ai pas modifié moi-même, car c'est un réglage de sécurité. (11 October 2026, 10:51:16 +0200)
+> 2. Ouvrir une nouvelle session Claude Code pour charger les outils Blender. (11 October 2026, 10:51:16 +0200)
+>
+> | Ce que tu voulais | Fait | Comment je le sais | (11 October 2026, 10:51:16 +0200)
+> |---|---|---| (11 October 2026, 10:51:16 +0200)
+> | Blender normal, pas la bêta | Oui | Version 5.2.2 LTS, SHA-256 identique à celui publié, notarisée par Apple (`spctl` : accepted) | (11 October 2026, 10:51:16 +0200)
+> | Le MCP le plus officiel | Oui | Serveur de Blender Lab (tag v1.0.3), et non le projet communautaire `blender-mcp` | (11 October 2026, 10:51:16 +0200)
+> | Claude pilote Blender | Pas encore | `claude mcp get blender` : Connected, mais l'accès en ligne et une nouvelle session restent à faire | (11 October 2026, 10:51:16 +0200)
+>
+> Attention : selon la doc officielle, le serveur exécute du code Python généré par l'IA dans Blender sans garde-fou. Évite les fichiers sensibles, ou utilise une VM. (11 October 2026, 10:51:16 +0200)
+>
+> Sources (11 October 2026, 10:51:16 +0200)
+> - [Documentation officielle Blender Lab MCP](https://www.blender.org/lab/mcp-server/) (11 October 2026, 10:51:16 +0200)
+> - [Dépôt officiel lab/blender_mcp](https://projects.blender.org/lab/blender_mcp) (11 October 2026, 10:51:16 +0200)
+> - [Dossier de release Blender 5.2](https://download.blender.org/release/Blender5.2/) (11 October 2026, 10:51:16 +0200)
