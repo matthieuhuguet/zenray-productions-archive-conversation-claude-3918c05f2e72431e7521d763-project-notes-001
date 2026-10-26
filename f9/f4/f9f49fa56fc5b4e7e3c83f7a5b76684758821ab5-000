@@ -1,8 +1,24 @@
 {
  "schemaVersion": 1,
  "projectId": "conversation-claude-3918c05f2e72431e7521d763",
- "scannedAt": "2026-10-11T11:40:22.096Z",
+ "scannedAt": "2026-10-26T12:58:44.404Z",
  "conversations": [
+  {
+   "projectId": "conversation-claude-3918c05f2e72431e7521d763",
+   "lines": 1,
+   "work": 0,
+   "prompts": 0,
+   "first": "2026-10-11T22:40:52.468Z",
+   "last": "2026-10-11T22:40:52.468Z",
+   "strength": "weak",
+   "conversationId": "claude:af61e9e4-17cb-46aa-b66a-922874eb123f",
+   "provider": "claude",
+   "sessionId": "af61e9e4-17cb-46aa-b66a-922874eb123f",
+   "title": "ZENRAY ASSETS",
+   "updatedAt": "2026-10-11T22:51:54.267Z",
+   "bytes": 20972,
+   "boundProject": null
+  },
   {
    "projectId": "conversation-claude-3918c05f2e72431e7521d763",
    "strength": "bound",
@@ -16,7 +32,7 @@
    "sessionId": "6ab0a8c4-7fa2-46a1-b1f4-282a74f8f6f2",
    "title": "Installation Blender macOS",
    "updatedAt": "2026-10-11T11:39:10.426Z",
-   "bytes": 20782,
+   "bytes": 20866,
    "boundProject": "conversation-claude-3918c05f2e72431e7521d763"
   }
  ]
